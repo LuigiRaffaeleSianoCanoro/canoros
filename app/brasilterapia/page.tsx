@@ -17,6 +17,7 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
+  Stack,
 } from '@mui/material';
 import SpaIcon from '@mui/icons-material/Spa';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
@@ -577,52 +578,159 @@ export default function Brasilterapia() {
           </Box>
         </Box>
 
-        {/* Download PDF */}
-        <Box
-          sx={{
-            backgroundColor: '#f5f5f5',
-            p: { xs: 4, md: 6 },
-            borderRadius: '0.75rem',
-            mb: 10,
-            textAlign: 'center',
-          }}
-        >
-          <Typography
-            component="h2"
-            variant="h4"
-            sx={{
-              fontWeight: 700,
-              mb: 3,
-              color: '#333333',
-            }}
-          >
-            Condiciones Generales
-          </Typography>
-          <Typography
-            variant="body1"
-            sx={{
-              color: '#666666',
-              mb: 4,
-            }}
-          >
-            Descarga nuestras condiciones generales y políticas de reserva.
-          </Typography>
-          <Button
-            variant="contained"
-            startIcon={<DownloadIcon />}
-            sx={{
-              backgroundColor: '#E91E63',
-              '&:hover': {
-                backgroundColor: '#c2185b',
-              },
-            }}
-            component="a"
-            href="/catalogos/condicionesgeneralcanoros.pdf"
-            download
-          >
-            Descargar PDF
-          </Button>
-        </Box>
+        {/* Download PDFs */}
+        <Grid container spacing={4} sx={{ mb: 10 }}>
+          {/* Condiciones Generales */}
+          <Grid item xs={12} md={6}>
+            <Box
+              sx={{
+                backgroundColor: '#f5f5f5',
+                p: { xs: 4, md: 6 },
+                borderRadius: '0.75rem',
+                textAlign: 'center',
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+              }}
+            >
+              <Box>
+                <Typography
+                  component="h2"
+                  variant="h5"
+                  sx={{
+                    fontWeight: 700,
+                    mb: 2,
+                    color: '#333333',
+                  }}
+                >
+                  Condiciones Generales
+                </Typography>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: '#666666',
+                    mb: 4,
+                  }}
+                >
+                  Términos, políticas de reserva y cancelación de nuestros servicios.
+                </Typography>
+              </Box>
+              <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ justifyContent: 'center' }}>
+                <Button
+                  variant="contained"
+                  size="small"
+                  startIcon={<DownloadIcon />}
+                  sx={{
+                    backgroundColor: '#E91E63',
+                    '&:hover': {
+                      backgroundColor: '#c2185b',
+                    },
+                  }}
+                  component="a"
+                  href="/catalogos/condicionesgeneralcanoros.pdf"
+                  download
+                >
+                  Descargar
+                </Button>
+                <Button
+                  variant="outlined"
+                  size="small"
+                  sx={{
+                    borderColor: '#E91E63',
+                    color: '#E91E63',
+                    '&:hover': {
+                      borderColor: '#c2185b',
+                      color: '#c2185b',
+                    },
+                  }}
+                  component="a"
+                  href="/catalogos/condicionesgeneralcanoros.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver
+                </Button>
+              </Stack>
+            </Box>
+          </Grid>
+
+          {/* Catálogo */}
+          <Grid item xs={12} md={6}>
+            <Box
+              sx={{
+                backgroundColor: 'rgba(233, 30, 99, 0.05)',
+                p: { xs: 4, md: 6 },
+                borderRadius: '0.75rem',
+                textAlign: 'center',
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                border: '2px solid #E91E63',
+              }}
+            >
+              <Box>
+                <Typography
+                  component="h2"
+                  variant="h5"
+                  sx={{
+                    fontWeight: 700,
+                    mb: 2,
+                    color: '#333333',
+                  }}
+                >
+                  Catálogo Completo
+                </Typography>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: '#666666',
+                    mb: 4,
+                  }}
+                >
+                  Todos nuestros servicios, paquetes y experiencias disponibles.
+                </Typography>
+              </Box>
+              <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ justifyContent: 'center' }}>
+                <Button
+                  variant="contained"
+                  size="small"
+                  startIcon={<DownloadIcon />}
+                  sx={{
+                    backgroundColor: '#E91E63',
+                    '&:hover': {
+                      backgroundColor: '#c2185b',
+                    },
+                  }}
+                  component="a"
+                  href="/catalogos/catalogo.pdf"
+                  download
+                >
+                  Descargar
+                </Button>
+                <Button
+                  variant="outlined"
+                  size="small"
+                  sx={{
+                    borderColor: '#E91E63',
+                    color: '#E91E63',
+                    '&:hover': {
+                      borderColor: '#c2185b',
+                      color: '#c2185b',
+                    },
+                  }}
+                  component="a"
+                  href="/catalogos/catalogo.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver
+                </Button>
+              </Stack>
+            </Box>
+          </Grid>
+        </Grid>
 
         {/* Final CTA */}
         <Box

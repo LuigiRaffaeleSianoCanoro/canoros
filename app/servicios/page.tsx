@@ -23,6 +23,7 @@ import LocalTaxiIcon from '@mui/icons-material/LocalTaxi';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 import CompassCalibrationIcon from '@mui/icons-material/CompassCalibration';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import DownloadIcon from '@mui/icons-material/Download';
 import ContactButtons from '@/components/ContactButtons';
 
 interface Service {
@@ -472,6 +473,72 @@ export default function Servicios() {
             Contáctanos hoy y descubre cómo podemos hacer tu viaje inolvidable.
           </Typography>
           <ContactButtons />
+        </Box>
+
+        {/* Catalogo Section */}
+        <Box
+          sx={{
+            backgroundColor: '#f5f5f5',
+            p: { xs: 4, md: 6 },
+            borderRadius: '0.75rem',
+            mb: 8,
+            textAlign: 'center',
+          }}
+        >
+          <Typography
+            component="h2"
+            variant="h4"
+            sx={{
+              fontWeight: 700,
+              mb: 3,
+              color: '#333333',
+            }}
+          >
+            Descubre Nuestro Catálogo Completo
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{
+              color: '#666666',
+              mb: 4,
+              fontSize: '1.1rem',
+            }}
+          >
+            Consulta nuestro catálogo detallado con todos nuestros servicios, paquetes y opciones disponibles.
+          </Typography>
+          <Button
+            variant="contained"
+            startIcon={<DownloadIcon />}
+            sx={{
+              backgroundColor: '#E91E63',
+              '&:hover': {
+                backgroundColor: '#c2185b',
+              },
+              mr: 2,
+            }}
+            component="a"
+            href="/catalogos/catalogo.pdf"
+            download
+          >
+            Descargar PDF
+          </Button>
+          <Button
+            variant="outlined"
+            sx={{
+              borderColor: '#E91E63',
+              color: '#E91E63',
+              '&:hover': {
+                borderColor: '#c2185b',
+                color: '#c2185b',
+              },
+            }}
+            component="a"
+            href="/catalogos/catalogo.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver en línea
+          </Button>
         </Box>
       </Container>
     </>

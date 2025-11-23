@@ -100,7 +100,96 @@ export default function SobreNosotros() {
 
       {/* Main Content */}
       <Container maxWidth="lg">
-        {/* Historia */}
+        {/* Fundador Section */}
+        <Box sx={{ mb: 10 }}>
+          <Typography
+            component="h2"
+            variant="h3"
+            sx={{
+              fontWeight: 700,
+              mb: 6,
+              color: '#333333',
+              textAlign: 'center',
+            }}
+          >
+            Conoce a Raffaele
+          </Typography>
+          <Grid container spacing={6} alignItems="center">
+            <Grid item xs={12} md={5}>
+              <Box
+                component="img"
+                src="/images/headshot.png"
+                alt="Raffaele Siáno - Fundador de Canoro's Tours"
+                sx={{
+                  width: '100%',
+                  borderRadius: '0.75rem',
+                  boxShadow: '0 8px 24px rgba(0, 0, 0, 0.15)',
+                  aspectRatio: '3/4',
+                  objectFit: 'cover',
+                }}
+              />
+            </Grid>
+            <Grid item xs={12} md={7}>
+              <Typography
+                variant="h5"
+                sx={{
+                  fontWeight: 700,
+                  color: '#E91E63',
+                  mb: 2,
+                }}
+              >
+                Raffaele Siáno
+              </Typography>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: 600,
+                  color: '#333333',
+                  mb: 3,
+                }}
+              >
+                Fundador y Director de Canoro's Tours
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{
+                  color: '#666666',
+                  lineHeight: 1.8,
+                  mb: 2,
+                  fontSize: '1rem',
+                }}
+              >
+                Raffaele es el corazón de Canoro's Tours. Con más de 20 años de experiencia en turismo receptivo, ha dedicado su vida a crear experiencias memorables para viajeros de todo el mundo.
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{
+                  color: '#666666',
+                  lineHeight: 1.8,
+                  mb: 2,
+                  fontSize: '1rem',
+                }}
+              >
+                Su visión es simple pero poderosa: ofrecer servicios de turismo de máxima calidad, con atención personalizada y autenticidad en cada detalle. Su pasión por Argentina y su compromiso con la excelencia son el motor de la empresa.
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{
+                  color: '#666666',
+                  lineHeight: 1.8,
+                  fontSize: '1rem',
+                }}
+              >
+                Cuando no está coordinando viajes, Raffaele disfruta explorando nuevos destinos en Argentina y compartiendo sus experiencias con el equipo de Canoro's Tours.
+              </Typography>
+            </Grid>
+          </Grid>
+        </Box>
+
+        {/* Divider */}
+        <Box sx={{ my: 8, borderTop: '2px solid #e0e0e0' }} />
+
+        {/* Original Historia Section */}
         <Box sx={{ mb: 10 }}>
           <Typography
             component="h2"

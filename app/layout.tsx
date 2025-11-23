@@ -34,6 +34,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#333333" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
       </head>
       <body style={{ margin: 0, padding: 0 }}>
         <ThemeWrapper>
