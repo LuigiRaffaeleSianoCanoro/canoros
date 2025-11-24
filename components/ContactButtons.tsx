@@ -42,23 +42,35 @@ export default function ContactButtons({ variant = 'horizontal', size = 'medium'
       </Button>
 
       <Button
-        variant="outlined"
-        color="primary"
+        variant="contained"
         size={size}
         startIcon={<PhoneIcon />}
         component="a"
         href="tel:+542234516305"
+        sx={{
+          backgroundColor: '#E91E63',
+          color: '#ffffff',
+          '&:hover': {
+            backgroundColor: '#c2185b',
+          },
+        }}
       >
         Llamar
       </Button>
 
       <Button
-        variant="outlined"
-        color="primary"
+        variant="contained"
         size={size}
         startIcon={<EmailIcon />}
         component="a"
         href="mailto:canorostours@gmail.com"
+        sx={{
+          backgroundColor: '#E91E63',
+          color: '#ffffff',
+          '&:hover': {
+            backgroundColor: '#c2185b',
+          },
+        }}
       >
         Email
       </Button>
