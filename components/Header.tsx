@@ -70,7 +70,6 @@ export default function Header() {
                     borderRadius: '0.25rem',
                   }}
                 />
-                <Box sx={{ display: { xs: 'none', sm: 'block' } }}>Canoro's Tours</Box>
               </Box>
             </Link>
 

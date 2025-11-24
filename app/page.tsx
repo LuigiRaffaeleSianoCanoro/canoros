@@ -213,7 +213,7 @@ export default function Home() {
                   lineHeight: 1.8,
                 }}
               >
-                Descubri nuestro catalogo
+                Descubre lo mejor que nuestro catálogo tiene para ofrecerte
               </Typography>
               <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
                 <Button
@@ -250,20 +250,6 @@ export default function Home() {
                   Consultar
                 </Button>
               </Stack>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Box
-                sx={{
-                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                  p: 3,
-                  borderRadius: '0.75rem',
-                  textAlign: 'center',
-                }}
-              >
-                <Typography variant="body2" sx={{ fontStyle: 'italic' }}>
-                  "Vive una experiencia transformadora de bienestar en el corazón de Argentina"
-                </Typography>
-              </Box>
             </Grid>
           </Grid>
         </Container>
