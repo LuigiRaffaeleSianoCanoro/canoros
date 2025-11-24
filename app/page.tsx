@@ -213,7 +213,7 @@ export default function Home() {
                   lineHeight: 1.8,
                 }}
               >
-                Descubre nuestra experiencia exclusiva de bienestar y relajación. Brasilterapia combina técnicas tradicionales con confort moderno.
+                Descubri nuestro catalogo
               </Typography>
               <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
                 <Button
