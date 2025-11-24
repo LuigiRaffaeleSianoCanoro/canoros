@@ -52,21 +52,36 @@ export default function Home() {
       {/* Hero Section */}
       <Box
         sx={{
-          backgroundColor: '#f5f5f5',
-          py: { xs: 6, md: 10 },
+          backgroundImage: 'url("https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=1600&h=900&fit=crop")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+          position: 'relative',
+          py: { xs: 8, md: 12 },
           textAlign: 'center',
           mb: 6,
+          '&::before': {
+            content: '""',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            zIndex: 1,
+          },
         }}
       >
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 2 }}>
           <Typography
             component="h1"
             variant="h2"
             sx={{
               fontWeight: 800,
               mb: 2,
-              color: '#333333',
+              color: '#ffffff',
               fontSize: { xs: '2rem', sm: '2.5rem', md: '3.5rem' },
+              textShadow: '2px 2px 8px rgba(0, 0, 0, 0.6)',
             }}
           >
             Canoro's Tours
@@ -74,9 +89,10 @@ export default function Home() {
           <Typography
             variant="h5"
             sx={{
-              color: '#666666',
+              color: '#ffffff',
               mb: 4,
               fontSize: { xs: '1rem', md: '1.25rem' },
+              textShadow: '1px 1px 4px rgba(0, 0, 0, 0.6)',
             }}
           >
             Incoming Services Especializado en Turismo Receptivo
@@ -84,12 +100,13 @@ export default function Home() {
           <Typography
             variant="body1"
             sx={{
-              color: '#666666',
+              color: '#ffffff',
               maxWidth: '700px',
               mx: 'auto',
               mb: 4,
               fontSize: '1.1rem',
               lineHeight: 1.8,
+              textShadow: '1px 1px 4px rgba(0, 0, 0, 0.6)',
             }}
           >
             Con más de 20 años de experiencia, ofrecemos servicios de turismo receptivo de alta calidad en Argentina. Diseñamos paquetes personalizados, coordinamos grupos y ofrecemos experiencias únicas como Brasilterapia.

@@ -138,7 +138,7 @@ export default function SobreNosotros() {
                   mb: 2,
                 }}
               >
-                Raffaele Siáno
+                Raffaele Nunzio Canoro
               </Typography>
               <Typography
                 variant="h6"
