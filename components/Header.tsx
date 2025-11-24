@@ -22,6 +22,8 @@ const navItems = [
   { label: 'Inicio', href: '/' },
   { label: 'Sobre Nosotros', href: '/sobre-nosotros' },
   { label: 'Servicios', href: '/servicios' },
+  { label: 'Hoteles', href: '/hoteles' },
+  { label: 'Destinos', href: '/destinos' },
   { label: 'Brasilterapia', href: '/brasilterapia' },
   { label: 'Contacto', href: '/contacto' },
 ];
