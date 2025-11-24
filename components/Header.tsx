@@ -63,7 +63,7 @@ export default function Header() {
                   src="/images/logo.png"
                   alt="Canoro's Tours Logo"
                   sx={{
-                    height: 40,
+                    height: 50,
                     width: 'auto',
                     borderRadius: '0.25rem',
                   }}

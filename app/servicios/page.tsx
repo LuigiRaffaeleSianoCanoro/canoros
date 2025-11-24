@@ -104,13 +104,13 @@ const services: Service[] = [
     id: 'brasilterapia',
     title: 'Brasilterapia',
     icon: <AirplaneTicketIcon sx={{ fontSize: 48 }} />,
-    description: 'Nuestra experiencia exclusiva de bienestar que combina spa, relajación y experiencias transformadoras.',
+    description: 'Catálogo exclusivo de destinos turísticos en Brasil con las mejores opciones para explorar este país paradisíaco.',
     features: [
-      'Tratamientos holísticos',
-      'Espacios diseñados para el bienestar',
-      'Instructores especializados',
-      'Paquetes de varios días',
-      'Resultados comprobados',
+      'Destinos seleccionados en Brasil',
+      'Itinerarios flexibles y personalizables',
+      'Información detallada de cada ubicación',
+      'Contacto directo para reservas',
+      'Experiencias transformadoras garantizadas',
     ],
   },
 ];
@@ -146,7 +146,7 @@ export default function Servicios() {
               fontSize: { xs: '1rem', md: '1.25rem' },
             }}
           >
-            Soluciones completas de turismo receptivo
+            Vive una experiencia transformadora de turismo receptivo
           </Typography>
         </Container>
       </Box>

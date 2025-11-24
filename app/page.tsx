@@ -38,7 +38,7 @@ export default function Home() {
     {
       icon: <LocalActivityIcon sx={{ fontSize: 48 }} />,
       title: 'Brasilterapia',
-      description: 'Nuestra experiencia exclusiva de bienestar y relajación.',
+      description: 'Descubri Brasil!',
     },
     {
       icon: <EmojiEventsIcon sx={{ fontSize: 48 }} />,
@@ -52,7 +52,7 @@ export default function Home() {
       {/* Hero Section */}
       <Box
         sx={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=1600&h=900&fit=crop")',
+          backgroundImage: 'url("https://images.squarespace-cdn.com/content/v1/5ccb5a1770833d00010ec4fb/1560456481268-9PPUICH0NXVIHQ9VC221/BRAZIL_MG_2701_2.jpg?format=1000w")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
